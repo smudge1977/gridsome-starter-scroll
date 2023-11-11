@@ -1,4 +1,5 @@
 ---
+title: Deep tissue massage
 image: Home_page_website_1500_x_1000_px.jpg
 introduction: Deep tissue massage which incorporates **clinical massage techniques** is a therapeutic massage effective for relieving pain from muscular tension. It’s helpful in managing chronic pain as well as enabling you to relax.
 ---
