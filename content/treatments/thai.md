@@ -1,6 +1,7 @@
 ---
 title: Thai massage
 image: Thai_mas_alt_D_1500_x_1000_px.jpg
+weight: 20
 introduction: Thai massage is a unique, powerful and effective therapy, helping you to relax both physically and emotionally. Hands, elbows, forearms and feet are used to apply rhythmic pressure to relieve pain and tension.
 ---
 Thai massage is a unique, powerful and effective therapy, helping you to relax both physically and emotionally. Hands, elbows, forearms and feet are used to apply rhythmic pressure to relieve pain and tension.
