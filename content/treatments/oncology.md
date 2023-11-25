@@ -1,6 +1,6 @@
 ---
 title: Oncology massage
-image: Oncology_massage_website.jpg
+image: Oncology_massage_website.webp
 introduction: Oncology massage can be highly beneficial for people who have had a cancer diagnosis. it can help relieve the symptoms of cancer or side effects of treatments such as chemotherapy related fatigue, depression, nausea, insomnia, and pain. 
 ---
 Oncology massage can be highly beneficial for people who have had a cancer diagnosis. it can help relieve the symptoms of cancer or side effects of treatments such as chemotherapy related fatigue, depression, nausea, insomnia, and pain. 
