@@ -11,7 +11,7 @@ module.exports = {
   pathPrefix: process.env.PATH_PREFIX,
   metadata: {
     author: process.env.AUTHOR || "Jane Newman",
-    facebook: "https://m.facebook.com/profile.php/?id=100039382486576"
+    facebook: "https://www.facebook.com/brightonmassage/?locale=en_GB"
   },
   plugins: [
     {

@@ -20,7 +20,7 @@
               </div>
             </div>
             <div
-              class="flex-center border-t-1 md:border-t-0 border-l-0 md:border-l-1 w-auto md:w-2/3"
+              class="flex flex-col border-t-1 md:border-t-0 border-l-0 md:border-l-1 w-auto md:w-2/3"
             >
               <p
                 class="leading-relaxed text-xs md:text-base mx-auto md:mx-12 my-4 md:my-0"
@@ -58,7 +58,7 @@
               There are a wide range of treatments available.  Please on any of the below for more information.
             </p>
           </div>
-          <!-- each project -->
+          <!-- each treatment -->
           <div class="flex-center flex-wrap">
             <div
               class="m-4 md:w-1/3 lg:w-1/4"
@@ -285,9 +285,10 @@
 
 <page-query>
 query {
-  allTreatments {
+  allTreatments(sortBy: "weight", order: DESC) {
     edges {
       node {
+        weight
         id
         title
         image

@@ -6,7 +6,7 @@
 
 :root {
   --color-header-color: #e3f1fc;
-  --color-header-background: #00616e;
+  --color-header-background: #af70af;
   --color-header-highlight: #ffffff;
   --color-content-color: #45474d;
   --color-content-background: #e5e8ee;
@@ -15,9 +15,9 @@
 }
 
 html.dark {
-  --color-header-color: #f4fcfe;
-  --color-header-background: #00616e;
-  --color-header-highlight: #dd9023;
+  --color-header-color: #bea8bd;
+  --color-header-background: #af70af;
+  --color-header-highlight: rgb(59, 22, 46);
   --color-content-color: #edeef1;
   --color-content-background: #81879c;
   --color-content-highlight: #dd9023;
