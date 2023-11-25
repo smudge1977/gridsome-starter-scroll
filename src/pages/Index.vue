@@ -8,7 +8,7 @@
             <div class="flex flex-col items-center w-2/3 md:w-1/3 my-4 md:my-0 w-auto">
               <img
                 class="w-1/2 md:w-auto"
-                src="jane.png"
+                src="jane.webp"
               />
               <div class="flex flex-col items-center">
                 <h2 class="font-medium mt-4 text-xl md:text-2xl">
@@ -21,6 +21,7 @@
             </div>
             <div
               class="flex flex-col border-t-1 md:border-t-0 border-l-0 md:border-l-1 w-auto md:w-2/3"
+              style="padding: 0.5em;"
             >
               <p
                 class="leading-relaxed text-xs md:text-base mx-auto md:mx-12 my-4 md:my-0"
@@ -214,6 +215,8 @@
       <!-- contact section -->
       <section id="contact" class="flex-center h-full min-h-screen m-auto border-b-4">
         <div class="flex-center flex-col container h-full m-auto">
+          <GoogleReview/>
+          <GoogleReview2/>
           <div>
             <div class="flex flex-col text-center w-full mb-4">
               <h1 class="font-medium text-base md:text-lg mb-4">
@@ -337,11 +340,17 @@ import GithubIcon from "vue-material-design-icons/Github"
 import OpenInNewIcon from "vue-material-design-icons/OpenInNew"
 import Social from "~/components/Social.vue"
 
+// import GoogleReview from "~/components/GoogleReview/GoogleReview.vue"
+// let GoogleReview2 = "https://widget.trustmary.com/5qR6J__JS"
+
 export default {
   components: {
     GithubIcon,
     OpenInNewIcon,
     Social,
+    // GoogleReview,
+    // GoogleReview2,
   },
 }
+
 </script>
