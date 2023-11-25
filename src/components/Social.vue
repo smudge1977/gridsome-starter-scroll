@@ -1,20 +1,20 @@
 <template>
   <aside class="flex-center space-x-2 md:space-x-4">
     <a
-      :href="$static.metadata.github"
+      :href="$static.metadata.facebook"
       target="_blank"
       rel="noopener noreferrer"
-      title="Github"
+      title="Facebook"
     >
-      <GithubIcon class="icon-md md:icon-lg" />
+      <FacebookIcon class="icon-md md:icon-lg" />
     </a>
     <a
-      :href="$static.metadata.linkedin"
+      :href="$static.metadata.facebook"
       target="_blank"
       rel="noopener noreferrer"
-      title="Github"
+      title="Google"
     >
-      <LinkedinIcon class="icon-md md:icon-lg" />
+      <GoogleIcon class="icon-md md:icon-lg" />
     </a>
   </aside>
 </template>
@@ -22,20 +22,19 @@
 <static-query>
 query {
   metadata {
-    github
-    linkedin
+    facebook
   }
 }
 </static-query>
 
 <script>
-import GithubIcon from "vue-material-design-icons/Github"
-import LinkedinIcon from "vue-material-design-icons/Linkedin"
+import FacebookIcon from "vue-material-design-icons/Facebook"
+import GoogleIcon from "vue-material-design-icons/Google"
 
 export default {
   components: {
-    GithubIcon,
-    LinkedinIcon,
+    FacebookIcon,
+    GoogleIcon,
   },
 }
 </script>

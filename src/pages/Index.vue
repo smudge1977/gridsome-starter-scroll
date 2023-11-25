@@ -8,14 +8,14 @@
             <div class="flex flex-col items-center w-2/3 md:w-1/3 my-4 md:my-0 w-auto">
               <img
                 class="w-1/2 md:w-auto"
-                src="https://avataaars.io/?avatarStyle=Circle&topType=Hat&accessoriesType=Kurt&hatColor=Pink&facialHairType=BeardLight&facialHairColor=Brown&clotheType=BlazerShirt&eyeType=Happy&eyebrowType=RaisedExcitedNatural&mouthType=Twinkle&skinColor=DarkBrown"
+                src="jane.png"
               />
               <div class="flex flex-col items-center">
                 <h2 class="font-medium mt-4 text-xl md:text-2xl">
                   {{ $static.metadata.author }}
                 </h2>
                 <p class="text-sm md:text-base">
-                  I build things for the web.
+                  Massage in Brighton and Hove
                 </p>
               </div>
             </div>
@@ -25,21 +25,91 @@
               <p
                 class="leading-relaxed text-xs md:text-base mx-auto md:mx-12 my-4 md:my-0"
               >
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                sed diam voluptua. At vero eos et accusam et justo duo dolores
-                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-                est Lorem ipsum dolor sit amet.
+              <h3>How can massage help me?</h3>
+              <p>Experience relief from pain and tension from either physical or emotional causes,
+                including back, neck and shoulder pain, discomfort from repetitive strain injuries, joint pain and more.
+                Each treatment is individual to your requirements whether it's muscular pain and stiffness from sitting in front of a computer, 
+                gardening, playing sport or if you need to relax body and mind to help relieve the effects stress and anxiety.</p>
+
+                <h3>Where to find me</h3>
+                <p>I work from 2 locations, maps are below. At WellBN I use a treatment room away from the main surgery with a separate entrance.
+                  I also work close to 7 dials and St Ann's Wells gardens in a lovely space. Appointments for both locations are available on-line.</p>
+                  <p> Both treatment rooms are only accessible via stairs.</p>
+                <h3>Gift vouchers can be brought online</h3>
+                <p>Simply select either 60 minute voucher  or 90 minute voucher. For more info see the gift voucher page</p> 
+
+
               </p>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- treatments -->
+      <section id="treatments" class="flex-center h-full min-h-screen m-auto border-b-4">
+        <div class="flex-center flex-col container h-full m-auto">
+          <div class="text-center w-full">
+            <h1 class="font-medium text-base md:text-lg mb-4">
+              Treatments
+            </h1>
+            <p
+              class="mx-auto leading-relaxed text-xs md:text-base lg:w-2/3 mb-4"
+            >
+              There are a wide range of treatments available.  Please on any of the below for more information.
+            </p>
+          </div>
+          <!-- each project -->
+          <div class="flex-center flex-wrap">
+            <div
+              class="m-4 md:w-1/3 lg:w-1/4"
+              v-for="edge in $page.allTreatments.edges"
+              :key="edge.node.id"
+            >
+              <div class="flex flex-row md:flex-col">
+                <div
+                  class="flex flex-col justify-start md:justify-center items-start md:items-center w-1/3 md:w-auto"
+                >
+                  <img
+                    class="rounded-lg object-contain"
+                    :src="edge.node.image"
+                    
+                    :alt="edge.node.title"
+                  />
+                  <div class="flex-center space-x-2 md:space-x-4 m-4">
+                    <a
+                      :href="edge.node.github"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Github"
+                    >
+                      <GithubIcon class="icon" />
+                    </a>
+                    <a
+                      :href="edge.node.url"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      :title="edge.node.title"
+                    >
+                      <OpenInNewIcon class="icon" />
+                    </a>
+                  </div>
+                </div>
+                <div class="ml-4 md:ml-0 w-auto">
+                  <h2 class="font-medium text-base md:text-lg">
+                    {{ edge.node.title }}
+                  </h2>
+                  <div
+                    class="mx-auto leading-relaxed text-xs md:text-base"
+                    v-html="edge.node.introduction"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       <!-- experiences -->
       <section id="experiences" class="flex-center h-full min-h-screen m-auto border-b-4">
         <div class="flex-center flex-col container h-full m-auto">
@@ -215,6 +285,17 @@
 
 <page-query>
 query {
+  allTreatments {
+    edges {
+      node {
+        id
+        title
+        image
+        introduction
+        content
+      }
+    }
+  }
   allExperiences(sortBy: "from", order: DESC) {
     edges {
       node {

@@ -33,6 +33,14 @@
             </li>
             <li>
               <a
+                href="#treatments"
+                class="scrollactive-item text-header-color sm:inline-block sm:mt-0"
+              >
+                treatments
+              </a>
+            </li>
+            <li>
+              <a
                 href="#experiences"
                 class="scrollactive-item text-header-color sm:inline-block sm:mt-0"
               >
@@ -49,10 +57,10 @@
             </li>
             <li>
               <a
-                href="#treatments"
+                href="#blogs"
                 class="scrollactive-item text-header-color sm:inline-block sm:mt-0"
               >
-                treatments
+                blog posts
               </a>
             </li>
             <li>

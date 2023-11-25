@@ -6,15 +6,25 @@
 
 module.exports = {
   siteName: process.env.SITE_NAME || "Massage Brighton",
-  siteDescription: process.env.SITE_DESCRIPTION || "Lorem ipsum ...",
-  siteUrl: process.env.SITE_URL,
+  siteDescription: process.env.SITE_DESCRIPTION || "Deep tissue massage, Clinical massage, Thai massage, MFR, Abdominal massage, Reflexology, Pregnancy massage, Oncology massage.",
+  siteUrl: process.env.SITE_URL || "http://127.0.0.1:8000",
   pathPrefix: process.env.PATH_PREFIX,
   metadata: {
     author: process.env.AUTHOR || "Jane Newman",
-    github: process.env.GITHUB_URL || "https://github.com/octocat",
-    linkedin: process.env.LINKEDIN_URL || "https://www.linkedin.com/in/john-doe",
+    facebook: "https://m.facebook.com/profile.php/?id=100039382486576"
   },
   plugins: [
+    {
+      use: '@gridsome/plugin-sitemap'
+    },
+    {
+      use: 'gridsome-plugin-robots',
+      options: {
+        host: 'https://www.example.com',
+        sitemap: 'https://www.example.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     {
       use: "@gridsome/source-filesystem",
       options: {
