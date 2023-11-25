@@ -38,12 +38,24 @@
                   <p> Both treatment rooms are only accessible via stairs.</p>
                 <h3>Gift vouchers can be brought online</h3>
                 <p>Simply select either 60 minute voucher  or 90 minute voucher. For more info see the gift voucher page</p> 
-
-
+                
               </p>
+              <div class="flex items-center mx-auto flex flex-col md:flex-row mx-8" style="margin: 10px;">
+                <div class="flex flex-col w-auto md:w-1/2" >
+                  <h2>Western Road</h2>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.315762119968!2d-0.15913658401452807!3d50.82531487952877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875856b255f8bd9%3A0x783b2c1fbe467b41!2sBrighton%20Health%20and%20Wellbeing%20Centre!5e0!3m2!1sen!2suk!4v1600807803045!5m2!1sen!2suk" allowfullscreen="allowfullscreen" aria-hidden="false"/>
+                </div>
+                <div class="flex flex-col w-auto md:w-1/2">
+                  <h2>7 Dials</h2>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d980.9893174226826!2d-0.1525974924803106!3d50.83127158506731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875856e8f920233%3A0x465ed710017006f8!2sOsmond%20Road!5e0!3m2!1sen!2suk!4v1600807958064!5m2!1sen!2suk" allowfullscreen="allowfullscreen" aria-hidden="false"/>
+                </div>
+                </div>
             </div>
+            
           </div>
+          
         </div>
+        
       </section>
 
       <!-- treatments -->
