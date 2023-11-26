@@ -32,12 +32,19 @@
                 Each treatment is individual to your requirements whether it's muscular pain and stiffness from sitting in front of a computer, 
                 gardening, playing sport or if you need to relax body and mind to help relieve the effects stress and anxiety.</p>
 
+              <h3>Massage and your health</h3>
+              <p>I've had experience massaging people with a variety of pain and health conditions including back, neck or shoulder pain, carpal tunnel syndrome (CTS), tennis and golfers elbow, sciatic pain, fibromyalgia, chronic fatigue, headaches and migraines, cancer, HIV, EDS and multiple sclerosis. I believe in working slowly and sensitively, using a listening, intuitive touch, as massage doesn't have to be really painful to be effective. You can expect a reduction of pain and increased movement in up to six regular treatments, often with a significant improvement within three sessions. For chronic health conditions treatments every month or fortnight is beneficial to help manage pain and calm the nervous system.  Selfcare advice and stretches can be given to enable you to help yourself at home. Please contact me to find out how I can help you.</p>
+
                 <h3>Where to find me</h3>
                 <p>I work from 2 locations, maps are below. At WellBN I use a treatment room away from the main surgery with a separate entrance.
                   I also work close to 7 dials and St Ann's Wells gardens in a lovely space. Appointments for both locations are available on-line.</p>
                   <p> Both treatment rooms are only accessible via stairs.</p>
+                  <h3>Prices</h3>
+                <p>For all treatments 60 minute sessions are £60 and 90 minute sessions are £85.</p>
                 <h3>Gift vouchers can be brought online</h3>
-                <p>Simply select either 60 minute voucher  or 90 minute voucher. For more info see the gift voucher page</p> 
+                <p>Simply select either <a href="https://app.acuityscheduling.com/catalog.php?owner=13402788&action=addCart&id=1608112&clear=1" target="_blank" rel="noopener">60 minute voucher</a> or 
+                  <a href="https://app.acuityscheduling.com/catalog.php?owner=13402788&action=addCart&clear=1&id=1608117"  target="_blank" rel="noopener">90 minute voucher</a>.
+                  For more info see the <a href="#gift-vouchers">gift voucher section</a></p> 
                 
               </p>
               <div class="flex items-center mx-auto flex flex-col md:flex-row " >
@@ -62,13 +69,18 @@
       <section id="treatments" class="flex-center h-full min-h-screen m-auto border-b-4">
         <div class="flex-center flex-col container h-full m-auto">
           <div class="text-center w-full">
-            <h1 class="font-medium text-base md:text-lg mb-4">
+            <!-- <h1 class="font-medium text-base md:text-lg mb-4">
               Treatments
-            </h1>
+            </h1> -->
             <p
               class="mx-auto leading-relaxed text-xs md:text-base lg:w-2/3 mb-4"
             >
-              There are a wide range of treatments available.  Please on any of the below for more information.
+              <h2>What treatment to choose?</h2>
+              <p>Deep Tissue / Clinical massage or Thai massage work equally well for many conditions so your choice is personal preference.</p>
+              <p>If you're sensitive to massage, experiencing fatigue or chronic pain Myofascial Release can help.</p>
+              <p>Massage is also safe and suitable throughout all stages of Pregnancy.</p>
+              <p>If you are living with Cancer Oncology massage can have many benefits, including helping relieve the symptoms of cancer or side effects of any treatments you may be receiving. Treating the feet with Reflexology has many of the benefits of body massage and can be combined with other therapies too. Further info on the individual treatments page.</p>
+              <p>I use vegan massage wax from songbird for my treatments, these are 100% natural and fully certified by the Vegan Society.</p>
             </p>
           </div>
           <!-- each treatment -->
@@ -88,14 +100,14 @@
       <!-- Bookings -->
       <section id="bookings" class="flex-center h-full min-h-screen m-auto border-b-4">
         <div class="flex-center flex-col container h-full m-auto">
-          <h1><a href="https://app.acuityscheduling.com/schedule.php?owner=13402788">Make a booking</a></h1>
+          <h1><a href="https://app.acuityscheduling.com/schedule.php?owner=13402788"  target="_blank" rel="noopener">Make a booking</a></h1>
           <!-- <iframe src="https://app.acuityscheduling.com/schedule.php?owner=13402788" width="100%" height="500" scrolling="auto" frameborder="1" title="Booking" class="wrapper">
 		This option will not work correctly. Unfortunately, your browser does not support inline frames.	</iframe> -->
     <!-- <iframe src="https://app.acuityscheduling.com/schedule.php?owner=13402788" width="100%" height="100%" scrolling="no" frameborder="10" title="Booking">
 		This option will not work correctly. Unfortunately, your browser does not support inline frames.	</iframe> -->
           <iframe src="https://app.acuityscheduling.com/schedule.php?owner=13402788" width="100%" height="3600"  title="Booking">
           This option will not work correctly. Unfortunately, your browser does not support inline frames.
-          <a href="https://app.acuityscheduling.com/schedule.php?owner=13402788">Make a booking</a>
+          <a href="https://app.acuityscheduling.com/schedule.php?owner=13402788"  target="_blank" rel="noopener">Make a booking</a>
           </iframe>
         </div>
       </section>
@@ -108,81 +120,7 @@
       <!-- FAQ -->
       <section id="faq" class="flex-center h-full min-h-screen m-auto border-b-4">
         <div class="flex-center flex-col container h-full m-auto">
-          <div class="flex relative py-6 md:py12 md:w-2/3 m-auto">
-          <!-- v-for="edge in $page.allExperiences.edges"
-            :key="edge.node.id" -->
-
-<!-- 
-            <div class="flex-center w-18 md:w-28 h-full absolute inset-0">
-              <div class="h-full w-1 bg-current pointer-events-none"></div>
-            </div> -->
-            <div
-              class="flex-center flex-shrink-0 w-18 h-18 md:w-28 md:h-28 rounded-full bg-content-highlight z-1"
-            >
-              <div
-                class="flex flex-col text-center leading-none text-xs md:text-base font-weight-500"
-              >
-              SPAN  <!-- <span>{{ edge.node.from }}</span>
-                <span>-</span>
-                <span>{{ edge.node.to }}</span> -->
-              </div>
-            </div>
-            <div class="flex flex-grow pl-4 md:pl-8 items-start">
-              <div class="flex-grow mt-0 md:mt-6 pl-2 md:pl-8">
-                <h2 class="font-medium text-base md:text-lg mb-1 ">
-                  H2<!-- {{ edge.node.company }} -->
-                </h2>
-                <div
-                  class="leading-relaxed text-xs md:text-base"
-                  
-                >Contents</div>
-              </div>
-            </div>
-
-            <!-- <div class="flex-center w-18 md:w-28 h-full absolute inset-0">
-              <div class="h-full w-1 bg-current pointer-events-none"></div>
-            </div> -->
-            <div
-              class="flex-center flex-shrink-0 w-18 h-18 md:w-28 md:h-28 rounded-full bg-content-highlight z-1"
-            >
-              <div
-                class="flex flex-col text-center leading-none text-xs md:text-base font-weight-500"
-              >
-              SPAN  <!-- <span>{{ edge.node.from }}</span>
-                <span>-</span>
-                <span>{{ edge.node.to }}</span> -->
-              </div>
-            </div>
-            <div class="flex flex-grow pl-4 md:pl-8 items-start">
-              <div class="flex-grow mt-0 md:mt-6 pl-2 md:pl-8">
-                <h2 class="font-medium text-base md:text-lg mb-1 ">
-                  H2<!-- {{ edge.node.company }} -->
-                </h2>
-                <div
-                  class="leading-relaxed text-xs md:text-base"
-                  
-                >Contents</div>
-              </div>
-            </div>
-
-            <div class="flex-center flex-shrink-0 w-18 h-18 md:w-28 md:h-28 rounded-full bg-content-highlight z-1">
-              <div class="flex flex-col text-center leading-none text-xs md:text-base font-weight-500">
-                  Where?  <!-- <span>{{ edge.node.from }}</span>
-                <span>-</span>
-                <span>{{ edge.node.to }}</span> -->
-              </div>
-            </div>
-            <div class="flex flex-grow pl-4 md:pl-8 items-start">
-              <div class="flex-grow mt-0 md:mt-6 pl-2 md:pl-8">
-                <h2 class="font-medium text-base md:text-lg mb-1 ">
-                  Where do you work from?<!-- {{ edge.node.company }} -->
-                </h2>
-                <div class="leading-relaxed text-xs md:text-base">
-                  
-                </div>
-              </div>
-            </div>
-
+          <div>
             <TimeLineDot dot="Where" heading="Where do you work from?"
               content="<p>I work from 2 locations around the Brighton / Hove border area. Both are light, 
                   airy and well ventilated, maps on the main pages of website On Western road I use a calm and peaceful 
@@ -215,7 +153,7 @@ Treatments of the feet Reflexology and Thai Foot massage have many of the benefi
             <TimeLineDot dot="How many" heading="How many treatments will I need?" content="It's very individual and both physical and emotional factors can have an impact also how long you've been in pain. A recent twinge in the neck will usually need less treatments than a long term injury. Generally you can expect a reduction of pain and increased movement in up to six treatments, often with a significant improvement within three sessions, ideally initially weekly. For chronic health conditions treatments every month or fortnight is beneficial to help manage pain and calm the nervous system."/>
 
             <TimeLineDot dot="Products" Heading="What products do you use for your treatments?"
-              content="I use vegan massage wax from <a href=https://www.songbirdnaturals.co.uk/vegan-wax.html>Songbird</a>, these are 100% natural and fully certified by the Vegan Society."/>
+              content="I use vegan massage wax from <a href=https://www.songbirdnaturals.co.uk/vegan-wax.html  target=_blank rel=noopener>Songbird</a>, these are 100% natural and fully certified by the Vegan Society."/>
 
             <TimeLineDot dot="Children" heading="Do you treat Children?"
               content="Yes, all under 16's need a parent or carer to be present"/>
@@ -227,48 +165,11 @@ Treatments of the feet Reflexology and Thai Foot massage have many of the benefi
               content="This depends on the plan, they often have qualification requirements and both ACMT & ITEC for massage and VCTC for Reflexology meet these requirements. Full list of main qualifications here, just scroll to the botto of the page. I'm fully insured and can provide a receipt will all details required."/>
 
             <TimeLineDot dot="Payments" heading="Do you take card payments?"
-              content="Yes, cash too."/>"
+              content="Yes, cash too."/>
             
             <TimeLineDot dot="Masks" heading="Do I need to wear a mask?"
               content="It's not required and remains personal choice. I'm not wearing a mask however will wear one on request"/>
 
-          </div>
-        </div>
-      </section>
-
-      <!-- experiences -->
-      <section id="experiences" class="flex-center h-full min-h-screen m-auto border-b-4">
-        <div class="flex-center flex-col container h-full m-auto">
-          <div
-            class="flex relative py-6 md:py12 md:w-2/3 m-auto"
-            v-for="edge in $page.allExperiences.edges"
-            :key="edge.node.id"
-          >
-            <div class="flex-center w-18 md:w-28 h-full absolute inset-0">
-              <div class="h-full w-1 bg-current pointer-events-none"></div>
-            </div>
-            <div
-              class="flex-center flex-shrink-0 w-18 h-18 md:w-28 md:h-28 rounded-full bg-content-highlight z-1"
-            >
-              <div
-                class="flex flex-col text-center leading-none text-xs md:text-base font-weight-500"
-              >
-                <span>{{ edge.node.from }}</span>
-                <span>-</span>
-                <span>{{ edge.node.to }}</span>
-              </div>
-            </div>
-            <div class="flex flex-grow pl-4 md:pl-8 items-start">
-              <div class="flex-grow mt-0 md:mt-6 pl-2 md:pl-8">
-                <h2 class="font-medium text-base md:text-lg mb-1 ">
-                  {{ edge.node.company }}
-                </h2>
-                <div
-                  class="leading-relaxed text-xs md:text-base"
-                  v-html="edge.node.content"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </section>
