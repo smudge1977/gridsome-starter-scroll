@@ -85,8 +85,8 @@
         </div>
       </section>
 
-      <!-- experiences -->
-      <section id="experiences" class="flex-center h-full min-h-screen m-auto border-b-4">
+      <!-- Bookings -->
+      <section id="bookings" class="flex-center h-full min-h-screen m-auto border-b-4">
         <div class="flex-center flex-col container h-full m-auto">
           <h1><a href="https://app.acuityscheduling.com/schedule.php?owner=13402788">Make a booking</a></h1>
           <!-- <iframe src="https://app.acuityscheduling.com/schedule.php?owner=13402788" width="100%" height="500" scrolling="auto" frameborder="1" title="Booking" class="wrapper">
@@ -103,7 +103,137 @@
       <!-- Gift vouchers -->
       <section id="gift-vouchers" class="flex-center h-full min-h-screen m-auto border-b-4">
         <GiftVoucher/>
+      </section>
 
+      <!-- FAQ -->
+      <section id="faq" class="flex-center h-full min-h-screen m-auto border-b-4">
+        <div class="flex-center flex-col container h-full m-auto">
+          <div class="flex relative py-6 md:py12 md:w-2/3 m-auto">
+          <!-- v-for="edge in $page.allExperiences.edges"
+            :key="edge.node.id" -->
+
+<!-- 
+            <div class="flex-center w-18 md:w-28 h-full absolute inset-0">
+              <div class="h-full w-1 bg-current pointer-events-none"></div>
+            </div> -->
+            <div
+              class="flex-center flex-shrink-0 w-18 h-18 md:w-28 md:h-28 rounded-full bg-content-highlight z-1"
+            >
+              <div
+                class="flex flex-col text-center leading-none text-xs md:text-base font-weight-500"
+              >
+              SPAN  <!-- <span>{{ edge.node.from }}</span>
+                <span>-</span>
+                <span>{{ edge.node.to }}</span> -->
+              </div>
+            </div>
+            <div class="flex flex-grow pl-4 md:pl-8 items-start">
+              <div class="flex-grow mt-0 md:mt-6 pl-2 md:pl-8">
+                <h2 class="font-medium text-base md:text-lg mb-1 ">
+                  H2<!-- {{ edge.node.company }} -->
+                </h2>
+                <div
+                  class="leading-relaxed text-xs md:text-base"
+                  
+                >Contents</div>
+              </div>
+            </div>
+
+            <!-- <div class="flex-center w-18 md:w-28 h-full absolute inset-0">
+              <div class="h-full w-1 bg-current pointer-events-none"></div>
+            </div> -->
+            <div
+              class="flex-center flex-shrink-0 w-18 h-18 md:w-28 md:h-28 rounded-full bg-content-highlight z-1"
+            >
+              <div
+                class="flex flex-col text-center leading-none text-xs md:text-base font-weight-500"
+              >
+              SPAN  <!-- <span>{{ edge.node.from }}</span>
+                <span>-</span>
+                <span>{{ edge.node.to }}</span> -->
+              </div>
+            </div>
+            <div class="flex flex-grow pl-4 md:pl-8 items-start">
+              <div class="flex-grow mt-0 md:mt-6 pl-2 md:pl-8">
+                <h2 class="font-medium text-base md:text-lg mb-1 ">
+                  H2<!-- {{ edge.node.company }} -->
+                </h2>
+                <div
+                  class="leading-relaxed text-xs md:text-base"
+                  
+                >Contents</div>
+              </div>
+            </div>
+
+            <div class="flex-center flex-shrink-0 w-18 h-18 md:w-28 md:h-28 rounded-full bg-content-highlight z-1">
+              <div class="flex flex-col text-center leading-none text-xs md:text-base font-weight-500">
+                  Where?  <!-- <span>{{ edge.node.from }}</span>
+                <span>-</span>
+                <span>{{ edge.node.to }}</span> -->
+              </div>
+            </div>
+            <div class="flex flex-grow pl-4 md:pl-8 items-start">
+              <div class="flex-grow mt-0 md:mt-6 pl-2 md:pl-8">
+                <h2 class="font-medium text-base md:text-lg mb-1 ">
+                  Where do you work from?<!-- {{ edge.node.company }} -->
+                </h2>
+                <div class="leading-relaxed text-xs md:text-base">
+                  
+                </div>
+              </div>
+            </div>
+
+            <TimeLineDot dot="Where" heading="Where do you work from?"
+              content="<p>I work from 2 locations around the Brighton / Hove border area. Both are light, 
+                  airy and well ventilated, maps on the main pages of website On Western road I use a calm and peaceful 
+                  treament room at WellBN (formally Brighton Health and Wellbeing centre) it's mainly seperated from the main 
+                  surgery and therapists use a separate entrance.</p>
+                  I also work close to 7 dials and St Anns Wells gardens in a lovely space. Appointments for both locations are available on the on-line booking system."/>
+
+            <TimeLineDot dot="Cancellation" heading="What is your cancellation policy?" content="If you're unable to make an appointment please cancel or contact me so I'm able to offer the space to someone else.
+              More than 24hrs it's possible to change either online or contacting me without charge
+If it's within 24hrs it's not possible to amend online so contact me by phone or email. There will be a cancellation charge.
+24 -12hrs and it's 50% of the full price and less than 12hrs it's the full price.
+Thank you for your understanding. "/>
+
+            <TimeLineDot dot="Mobile Massage" heading="Do you do mobile massage?" content="Sorry - No."/>
+
+            <TimeLineDot dot="Accessibility" heading="How accessible are your treatment spaces?"
+              content="Sorry there are stairs at both locations, the 7 dials location has less than at WellBN"/>
+
+            <TimeLineDot dot="Parking" heading="Can I park near by?" content="<p>Some of the roads near WellBN running north of Western Rd have Pay by phone parking, try not too close to Brighton, it gets more expensive!
+            </p><p>The 7 dials location also has near by Pay by phone parking</p>"/>
+
+            <TimeLineDot dot="Buses" heading="Can I travel by bus?" content="
+Many of the buses that run along Western rd stop near WellBN such as 1, 2, 5, 5a, 5b, 46, 49. The nearest bus stop is Norfolk square
+At 7 dials it's on the no 7 bus route, nearest stop is Osmond rd."/>
+
+            <TimeLineDot dot="What" heading="What massage is best for me?" content="Deep Tissue / Clinical massage or Thai massage work equally well for many conditions including back pain, so your choice is personal preference. If you are sensitive to massage, experiencing fatique or chronic pain Myofascial Release can help. It's possible to change your mind at the time of treatment for everything except Thai massage as this is on a futon matress.
+Treatments of the feet Reflexology and Thai Foot massage have many of the benefits of body massage and can be combined with other therapies. Please contact me or see the treatments page for more details.
+"/>
+
+            <TimeLineDot dot="How many" heading="How many treatments will I need?" content="It's very individual and both physical and emotional factors can have an impact also how long you've been in pain. A recent twinge in the neck will usually need less treatments than a long term injury. Generally you can expect a reduction of pain and increased movement in up to six treatments, often with a significant improvement within three sessions, ideally initially weekly. For chronic health conditions treatments every month or fortnight is beneficial to help manage pain and calm the nervous system."/>
+
+            <TimeLineDot dot="Products" Heading="What products do you use for your treatments?"
+              content="I use vegan massage wax from <a href=https://www.songbirdnaturals.co.uk/vegan-wax.html>Songbird</a>, these are 100% natural and fully certified by the Vegan Society."/>
+
+            <TimeLineDot dot="Children" heading="Do you treat Children?"
+              content="Yes, all under 16's need a parent or carer to be present"/>
+            
+            <TimeLineDot dot="Consultation" heading="How does the consultation process work?"
+              content="A few days before your appointment I send an online confidential consultation form and simple to fill in, to ensure I understand what you require from your massage. If you prefer not to use a google forms I can send a form in word to be emailed back to me or we can do the consultion at the time of the treatment. I find it helpful to have your information before I see you, it gives you more treatment time on the day and I can clarify any details or ask further info at the time of your appointment. "/>
+
+            <TimeLineDot dot="Health Insurance" heading="Can I claim on private healthcare plans?"
+              content="This depends on the plan, they often have qualification requirements and both ACMT & ITEC for massage and VCTC for Reflexology meet these requirements. Full list of main qualifications here, just scroll to the botto of the page. I'm fully insured and can provide a receipt will all details required."/>
+
+            <TimeLineDot dot="Payments" heading="Do you take card payments?"
+              content="Yes, cash too."/>"
+            
+            <TimeLineDot dot="Masks" heading="Do I need to wear a mask?"
+              content="It's not required and remains personal choice. I'm not wearing a mask however will wear one on request"/>
+
+          </div>
+        </div>
       </section>
 
       <!-- experiences -->
@@ -142,6 +272,7 @@
           </div>
         </div>
       </section>
+
       <!-- projects -->
       <section id="projects" class="flex-center h-full min-h-screen m-auto border-b-4">
         <div class="flex-center flex-col container h-full m-auto">
@@ -336,6 +467,7 @@ import OpenInNewIcon from "vue-material-design-icons/OpenInNew"
 import Social from "~/components/Social.vue"
 import TreatmentThumb from "~/components/TreatmentThumb.vue"
 import GiftVoucher from "~/components/GiftVoucher.vue"
+import TimeLineDot from "~/components/TimeLineDot.vue"
 // import TreatmentThumb from "~/components/Test.vue"
 // import GoogleReview from "~/components/GoogleReview/GoogleReview.vue"
 // let GoogleReview2 = "https://widget.trustmary.com/5qR6J__JS"
@@ -347,6 +479,7 @@ export default {
     Social,
     TreatmentThumb,
     GiftVoucher,
+    TimeLineDot,
     // GoogleReview,
     // GoogleReview2,
   },
