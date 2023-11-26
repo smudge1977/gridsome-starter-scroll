@@ -21,7 +21,7 @@
             </div>
             <div
               class="flex flex-col border-t-1 md:border-t-0 border-l-0 md:border-l-1 w-auto md:w-2/3"
-              style="padding: 0.5em;"
+              
             >
               <p
                 class="leading-relaxed text-xs md:text-base mx-auto md:mx-12 my-4 md:my-0"
@@ -40,12 +40,12 @@
                 <p>Simply select either 60 minute voucher  or 90 minute voucher. For more info see the gift voucher page</p> 
                 
               </p>
-              <div class="flex items-center mx-auto flex flex-col md:flex-row mx-8" style="margin: 10px;">
-                <div class="flex flex-col w-auto md:w-1/2" >
+              <div class="flex items-center mx-auto flex flex-col md:flex-row " >
+                <div class="flex flex-col w-auto md:w-1/2" style="padding: 1rem;">
                   <h2>Western Road</h2>
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.315762119968!2d-0.15913658401452807!3d50.82531487952877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875856b255f8bd9%3A0x783b2c1fbe467b41!2sBrighton%20Health%20and%20Wellbeing%20Centre!5e0!3m2!1sen!2suk!4v1600807803045!5m2!1sen!2suk" allowfullscreen="allowfullscreen" aria-hidden="false"/>
                 </div>
-                <div class="flex flex-col w-auto md:w-1/2">
+                <div class="flex flex-col w-auto md:w-1/2" style="padding: 1rem;">
                   <h2>7 Dials</h2>
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d980.9893174226826!2d-0.1525974924803106!3d50.83127158506731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875856e8f920233%3A0x465ed710017006f8!2sOsmond%20Road!5e0!3m2!1sen!2suk!4v1600807958064!5m2!1sen!2suk" allowfullscreen="allowfullscreen" aria-hidden="false"/>
                 </div>
@@ -78,45 +78,8 @@
               v-for="edge in $page.allTreatments.edges"
               :key="edge.node.id"
             >
-              <div class="flex flex-row md:flex-col">
-                <div
-                  class="flex flex-col justify-start md:justify-center items-start md:items-center w-1/3 md:w-auto"
-                >
-                  <img
-                    class="rounded-lg object-contain"
-                    :src="edge.node.image"
-                    
-                    :alt="edge.node.title"
-                  />
-                  <div class="flex-center space-x-2 md:space-x-4 m-4">
-                    <a
-                      :href="edge.node.github"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title="Github"
-                    >
-                      <GithubIcon class="icon" />
-                    </a>
-                    <a
-                      :href="edge.node.url"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      :title="edge.node.title"
-                    >
-                      <OpenInNewIcon class="icon" />
-                    </a>
-                  </div>
-                </div>
-                <div class="ml-4 md:ml-0 w-auto">
-                  <h2 class="font-medium text-base md:text-lg">
-                    {{ edge.node.title }}
-                  </h2>
-                  <div
-                    class="mx-auto leading-relaxed text-xs md:text-base"
-                    v-html="edge.node.introduction"
-                  />
-                </div>
-              </div>
+              <div style="border: 2px solid #af70af; border-radius: 5px; padding: 1em;"><TreatmentThumb :treatment="edge.node"/></div>
+              
             </div>
           </div>
         </div>
@@ -351,7 +314,8 @@ query {
 import GithubIcon from "vue-material-design-icons/Github"
 import OpenInNewIcon from "vue-material-design-icons/OpenInNew"
 import Social from "~/components/Social.vue"
-
+import TreatmentThumb from "~/components/TreatmentThumb.vue"
+// import TreatmentThumb from "~/components/Test.vue"
 // import GoogleReview from "~/components/GoogleReview/GoogleReview.vue"
 // let GoogleReview2 = "https://widget.trustmary.com/5qR6J__JS"
 
@@ -360,6 +324,7 @@ export default {
     GithubIcon,
     OpenInNewIcon,
     Social,
+    TreatmentThumb,
     // GoogleReview,
     // GoogleReview2,
   },
