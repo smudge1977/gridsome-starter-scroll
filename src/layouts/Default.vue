@@ -41,18 +41,26 @@
             </li>
             <li>
               <a
-                href="#experiences"
+                href="#bookings"
                 class="scrollactive-item text-header-color sm:inline-block sm:mt-0"
               >
-                experiences
+              bookings
               </a>
             </li>
             <li>
               <a
-                href="#projects"
+                href="#gift-vouchers"
                 class="scrollactive-item text-header-color sm:inline-block sm:mt-0"
               >
-                projects
+              gift vouchers
+              </a>
+            </li>
+            <li>
+              <a
+                href="#faq"
+                class="scrollactive-item text-header-color sm:inline-block sm:mt-0"
+              >
+                faq
               </a>
             </li>
             <li>
@@ -60,7 +68,7 @@
                 href="#blogs"
                 class="scrollactive-item text-header-color sm:inline-block sm:mt-0"
               >
-                blog posts
+                blog
               </a>
             </li>
             <li>
