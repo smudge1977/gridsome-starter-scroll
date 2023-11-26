@@ -100,22 +100,29 @@
       <!-- Bookings -->
       <section id="bookings" class="flex-center h-full min-h-screen m-auto border-b-4">
         <div class="flex-center flex-col container h-full m-auto">
-          <h1><a href="https://app.acuityscheduling.com/schedule.php?owner=13402788"  target="_blank" rel="noopener">Make a booking</a></h1>
-          <!-- <iframe src="https://app.acuityscheduling.com/schedule.php?owner=13402788" width="100%" height="500" scrolling="auto" frameborder="1" title="Booking" class="wrapper">
-		This option will not work correctly. Unfortunately, your browser does not support inline frames.	</iframe> -->
-    <!-- <iframe src="https://app.acuityscheduling.com/schedule.php?owner=13402788" width="100%" height="100%" scrolling="no" frameborder="10" title="Booking">
-		This option will not work correctly. Unfortunately, your browser does not support inline frames.	</iframe> -->
-          <iframe src="https://app.acuityscheduling.com/schedule.php?owner=13402788" width="100%" height="3600"  title="Booking">
-          This option will not work correctly. Unfortunately, your browser does not support inline frames.
-          <a href="https://app.acuityscheduling.com/schedule.php?owner=13402788"  target="_blank" rel="noopener">Make a booking</a>
-          </iframe>
+          <div class="flex-center flex-col container h-full m-auto">
+            <h1><a href="https://app.acuityscheduling.com/schedule.php?owner=13402788"  target="_blank" rel="noopener">Make a booking</a></h1>
+            <a href="#gift-vouchers">More information on gift vouchers</a>
+            <!-- <iframe src="https://app.acuityscheduling.com/schedule.php?owner=13402788" width="100%" height="500" scrolling="auto" frameborder="1" title="Booking" class="wrapper">
+      This option will not work correctly. Unfortunately, your browser does not support inline frames.	</iframe> -->
+      <!-- <iframe src="https://app.acuityscheduling.com/schedule.php?owner=13402788" width="100%" height="100%" scrolling="no" frameborder="10" title="Booking">
+      This option will not work correctly. Unfortunately, your browser does not support inline frames.	</iframe> -->
+            <iframe src="https://app.acuityscheduling.com/schedule.php?owner=13402788" width="100%" height="3600"  title="Booking">
+            This option will not work correctly. Unfortunately, your browser does not support inline frames.
+            <a href="https://app.acuityscheduling.com/schedule.php?owner=13402788"  target="_blank" rel="noopener">Make a booking</a>
+            </iframe>
+          </div>
+
+          <div id="gift-vouchers">
+            <GiftVoucher/>
+          </div>
         </div>
       </section>
 
       <!-- Gift vouchers -->
-      <section id="gift-vouchers" class="flex-center h-full min-h-screen m-auto border-b-4">
-        <GiftVoucher/>
-      </section>
+      <!-- <section class="flex-center h-full min-h-screen m-auto border-b-4">
+        
+      </section> -->
 
       <!-- FAQ -->
       <section id="faq" class="flex-center h-full min-h-screen m-auto border-b-4">

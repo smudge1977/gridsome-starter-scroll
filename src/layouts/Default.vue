@@ -49,14 +49,6 @@
             </li>
             <li>
               <a
-                href="#gift-vouchers"
-                class="scrollactive-item text-header-color sm:inline-block sm:mt-0"
-              >
-              gift vouchers
-              </a>
-            </li>
-            <li>
-              <a
                 href="#faq"
                 class="scrollactive-item text-header-color sm:inline-block sm:mt-0"
               >

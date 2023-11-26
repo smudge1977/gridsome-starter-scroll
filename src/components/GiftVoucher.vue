@@ -4,7 +4,7 @@
             <h1 class="font-medium text-base md:text-lg mb-4">
               Massage gift vouchers
             </h1>
-            <img src="New_Gift_Voucher_I_make_a_great_gift_3.webp"/>
+            <!-- <img src="New_Gift_Voucher_I_make_a_great_gift_3.webp"/> -->
             <p
               class="mx-auto leading-relaxed text-xs md:text-base lg:w-2/3 mb-4"
             >
