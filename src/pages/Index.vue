@@ -85,6 +85,20 @@
         </div>
       </section>
 
+      <!-- experiences -->
+      <section id="experiences" class="flex-center h-full min-h-screen m-auto border-b-4">
+        <div class="flex-center flex-col container h-full m-auto">
+          <h1><a href="https://app.acuityscheduling.com/schedule.php?owner=13402788">Make a booking</a></h1>
+          <!-- <iframe src="https://app.acuityscheduling.com/schedule.php?owner=13402788" width="100%" height="500" scrolling="auto" frameborder="1" title="Booking" class="wrapper">
+		This option will not work correctly. Unfortunately, your browser does not support inline frames.	</iframe> -->
+    <!-- <iframe src="https://app.acuityscheduling.com/schedule.php?owner=13402788" width="100%" height="100%" scrolling="no" frameborder="10" title="Booking">
+		This option will not work correctly. Unfortunately, your browser does not support inline frames.	</iframe> -->
+          <iframe src="https://app.acuityscheduling.com/schedule.php?owner=13402788" width="100%" height="3600"  title="Booking">
+          This option will not work correctly. Unfortunately, your browser does not support inline frames.
+          <a href="https://app.acuityscheduling.com/schedule.php?owner=13402788">Make a booking</a>
+          </iframe>
+        </div>
+      </section>
 
       <!-- experiences -->
       <section id="experiences" class="flex-center h-full min-h-screen m-auto border-b-4">
