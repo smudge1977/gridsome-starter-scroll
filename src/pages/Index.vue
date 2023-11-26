@@ -102,27 +102,7 @@
 
       <!-- Gift vouchers -->
       <section id="gift-vouchers" class="flex-center h-full min-h-screen m-auto border-b-4">
-        <div class="text-center w-full">
-            <h1 class="font-medium text-base md:text-lg mb-4">
-              Massage gift vouchers
-            </h1>
-            <img src="New_Gift_Voucher_I_make_a_great_gift_3.webp"/>
-            <p
-              class="mx-auto leading-relaxed text-xs md:text-base lg:w-2/3 mb-4"
-            >
-            Gift vouchers make a great wellbeing present for friends, family and loved ones.
-        Valid for 12 months and the lucky recipient will receive a lush smelling Heaven scent candle when they receive their treatment.
-        <h2>How to buy</h2>
-
-To purchase a voucher simply select either 60 minute voucher - £60 or 90 minute voucher - £85
-
-
-        
-Payment is by card or Paypal and you'll receive an email voucher which gives you an option to print and forward the voucher by email. In addition, please notify me if you'd like me to provide a traditional paper voucher. This can be posted to you or your recipient, it will have the same code on as the one you receive by email.
-
-Thank you for buying a gift voucher
-            </p>
-        </div>
+        <GiftVoucher/>
 
       </section>
 
@@ -355,6 +335,7 @@ import GithubIcon from "vue-material-design-icons/Github"
 import OpenInNewIcon from "vue-material-design-icons/OpenInNew"
 import Social from "~/components/Social.vue"
 import TreatmentThumb from "~/components/TreatmentThumb.vue"
+import GiftVoucher from "~/components/GiftVoucher.vue"
 // import TreatmentThumb from "~/components/Test.vue"
 // import GoogleReview from "~/components/GoogleReview/GoogleReview.vue"
 // let GoogleReview2 = "https://widget.trustmary.com/5qR6J__JS"
@@ -365,6 +346,7 @@ export default {
     OpenInNewIcon,
     Social,
     TreatmentThumb,
+    GiftVoucher,
     // GoogleReview,
     // GoogleReview2,
   },
