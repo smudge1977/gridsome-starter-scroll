@@ -11,23 +11,24 @@
                 <div class="flex-center space-x-2 md:space-x-4 m-4">
                     <!-- :href="edge.node.github" -->
                     <a
-                    
+                        
                         target="_blank"
                         rel="noopener noreferrer"
                         title="Read more"
-                        :href="read_moreUrl"
+                        :href="'treatment#' + encodeURIComponent(treatment.title)"
                         
                     >
                         <!-- T{{ read_moreUrl }}T -->
                     <!-- <OpenInNewIcon class="icon" /> -->
                         Read more<!-- <GithubIcon class="icon" /> -->
                     </a>
-                    <g-link :to=treatment.id>gRead more g</g-link>
+                    <g-link :to="'treatment#' + encodeURIComponent(treatment.title)">gRead more g</g-link>
                     <!-- :href="edge.node.url" -->
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
                         :title="treatment.title"
+                        
                     >
                         <!-- <BookingIcon class="icon"/> -->
                         Book

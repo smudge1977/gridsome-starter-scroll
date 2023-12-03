@@ -23,6 +23,7 @@ gridsome develop
 ## Build static
 
 ```bash
+npx browserslist@latest --update-db
 gridsome build
 ```
 

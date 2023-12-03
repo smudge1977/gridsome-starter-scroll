@@ -164,16 +164,17 @@
         </div>
       </section>
 
-      <!-- treatment articles -->
-      <section v-for="edge in $page.allBlogs.edges"
+      <!-- blog articles -->
+      <section id="blogitems">
+      <div v-for="edge in $page.allBlogs.edges"
               :key="edge.node.id"
-              :id="edge.node.title"
+              
               class="flex-center h-full min-h-screen m-auto border-b-4">
 
         <div class="flex flex-center flex-col container h-full m-auto">
           <Article :item="edge.node"/>
         </div>
-
+      </div>
       </section>
 
 

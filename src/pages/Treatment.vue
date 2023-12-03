@@ -3,8 +3,9 @@
     <div class="bg-content-background">
       <!-- experiences -->
       <section v-for="edge in $page.allTreatments.edges" id="treatment" class="flex-center h-full min-h-screen m-auto border-b-4">
-        <div class="flex-center flex-col container h-full m-auto">
-          <div class="text-center w-full">
+        <div class="flex flex-center flex-col container h-full m-auto">
+          <Article :item="edge.node"/>
+          <!-- <div class="text-center w-full">
             <h1 class="font-medium text-base md:text-lg mb-4">
                     {{ edge.node.title }}
             </h1>
@@ -21,7 +22,7 @@
                     v-html="edge.node.content"
                   />
             </p>
-          </div>
+          </div> -->
           </div>
       </section>
     </div>
@@ -56,9 +57,11 @@
 import GithubIcon from "vue-material-design-icons/Github"
 import OpenInNewIcon from "vue-material-design-icons/OpenInNew"
 import Social from "~/components/Social.vue"
+import Article from "~/components/Article.vue"
 
 export default {
   components: {
+    Article,
     GithubIcon,
     OpenInNewIcon,
     Social,

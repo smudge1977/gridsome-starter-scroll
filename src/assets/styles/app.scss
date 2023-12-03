@@ -42,6 +42,10 @@ html.dark {
   @apply text-content-color;
 }
 
+.article-content a {
+  text-decoration: underline;
+}
+
 h1,
 h2,
 h3,
