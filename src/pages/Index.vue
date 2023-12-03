@@ -96,6 +96,19 @@
         </div>
       </section>
 
+      <!-- treatment articles -->
+      <section v-for="edge in $page.allTreatments.edges"
+              :key="edge.node.id"
+              :id="edge.node.title"
+              class="flex-center h-full min-h-screen m-auto border-b-4">
+
+        <div class="flex flex-center flex-col container h-full m-auto">
+          <Article :item="edge.node"/>
+        </div>
+
+      </section>
+
+
       <!-- Bookings -->
       <section id="bookings" class="flex-center h-full min-h-screen m-auto border-b-4">
         <div class="flex-center flex-col container h-full m-auto">
@@ -150,6 +163,19 @@
           </div>
         </div>
       </section>
+
+      <!-- treatment articles -->
+      <section v-for="edge in $page.allBlogs.edges"
+              :key="edge.node.id"
+              :id="edge.node.title"
+              class="flex-center h-full min-h-screen m-auto border-b-4">
+
+        <div class="flex flex-center flex-col container h-full m-auto">
+          <Article :item="edge.node"/>
+        </div>
+
+      </section>
+
 
       <!-- FAQ -->
       <section id="faq" class="flex-center h-full min-h-screen m-auto border-b-4">
@@ -208,71 +234,7 @@ Treatments of the feet Reflexology and Thai Foot massage have many of the benefi
         </div>
       </section>
 
-      <!-- projects -->
-      <section id="projects" class="flex-center h-full min-h-screen m-auto border-b-4">
-        <div class="flex-center flex-col container h-full m-auto">
-          <div class="text-center w-full">
-            <h1 class="font-medium text-base md:text-lg mb-4">
-              Treatments
-            </h1>
-            <p
-              class="mx-auto leading-relaxed text-xs md:text-base lg:w-2/3 mb-4"
-            >
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua.
-            </p>
-          </div>
-          <!-- each project -->
-          <div class="flex-center flex-wrap">
-            <div
-              class="m-4 md:w-1/3 lg:w-1/4"
-              v-for="edge in $page.allProjects.edges"
-              :key="edge.node.id"
-            >
-              <div class="flex flex-row md:flex-col">
-                <div
-                  class="flex flex-col justify-start md:justify-center items-start md:items-center w-1/3 md:w-auto"
-                >
-                  <img
-                    class="rounded-lg object-contain"
-                    :src="edge.node.image"
-                    
-                    :alt="edge.node.title"
-                  />
-                  <div class="flex-center space-x-2 md:space-x-4 m-4">
-                    <a
-                      :href="edge.node.github"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title="Github"
-                    >
-                      <GithubIcon class="icon" />
-                    </a>
-                    <a
-                      :href="edge.node.url"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      :title="edge.node.title"
-                    >
-                      <OpenInNewIcon class="icon" />
-                    </a>
-                  </div>
-                </div>
-                <div class="ml-4 md:ml-0 w-auto">
-                  <h2 class="font-medium text-base md:text-lg">
-                    {{ edge.node.title }}
-                  </h2>
-                  <div
-                    class="mx-auto leading-relaxed text-xs md:text-base"
-                    v-html="edge.node.introduction"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <!-- contact section -->
       <section id="contact" class="flex-center h-full min-h-screen m-auto border-b-4">
         <div class="flex-center flex-col container h-full m-auto">
@@ -415,6 +377,7 @@ import TreatmentThumb from "~/components/TreatmentThumb.vue"
 import GiftVoucher from "~/components/GiftVoucher.vue"
 import TimeLineDot from "~/components/TimeLineDot.vue"
 import Thumb from "~/components/Thumb.vue"
+import Article from "~/components/Article.vue"
 // import GoogleReview from "~/components/GoogleReview/GoogleReview.vue"
 // let GoogleReview2 = "https://widget.trustmary.com/5qR6J__JS"
 
@@ -427,6 +390,7 @@ export default {
     Thumb,
     GiftVoucher,
     TimeLineDot,
+    Article,
     // GoogleReview,
     // GoogleReview2,
   },
