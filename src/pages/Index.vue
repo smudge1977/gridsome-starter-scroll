@@ -84,14 +84,13 @@
             </p>
           </div>
           <!-- each treatment -->
-          <div class="flex-center flex-wrap">
+          <div class="flex-center flex-wrap"  style="align-items: start;">
             <div
               class="m-4 md:w-1/3 lg:w-1/4"
               v-for="edge in $page.allTreatments.edges"
               :key="edge.node.id"
             >
-              <div style="border: 2px solid #af70af; border-radius: 5px; padding: 1em;"><TreatmentThumb :treatment="edge.node"/></div>
-              
+              <TreatmentThumb :treatment="edge.node"/>
             </div>
           </div>
         </div>
@@ -123,6 +122,34 @@
       <!-- <section class="flex-center h-full min-h-screen m-auto border-b-4">
         
       </section> -->
+
+      <!-- blogs -->
+      <section id="blogs" class="flex-center h-full min-h-screen m-auto border-b-4">
+        <div class="flex-center flex-col container h-full m-auto">
+          <div class="text-center w-full">
+            <!-- <h1 class="font-medium text-base md:text-lg mb-4">
+              Blog posts
+            </h1> -->
+            <p
+              class="mx-auto leading-relaxed text-xs md:text-base lg:w-2/3 mb-4"
+            >
+              <h2>Blog posts</h2>
+              <!-- <p>Test Thumb component</p> -->
+            </p>
+          </div>
+          <!-- each blog -->
+          <div class="flex-center flex-wrap" style="align-items: start;">
+            <div
+              class="m-4 md:w-1/3 lg:w-1/4"
+              v-for="edge in $page.allBlogs.edges"
+              :key="edge.node.id"
+            >
+              <Thumb :item="edge.node"/>
+              
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- FAQ -->
       <section id="faq" class="flex-center h-full min-h-screen m-auto border-b-4">
@@ -334,6 +361,17 @@ query {
       }
     }
   }
+  allBlogs(sortBy: "weight", order: DESC) {
+    edges {
+      node {
+        id
+        title
+        image
+        introduction
+        content
+      }
+    }
+  }
   allExperiences(sortBy: "from", order: DESC) {
     edges {
       node {
@@ -376,7 +414,7 @@ import Social from "~/components/Social.vue"
 import TreatmentThumb from "~/components/TreatmentThumb.vue"
 import GiftVoucher from "~/components/GiftVoucher.vue"
 import TimeLineDot from "~/components/TimeLineDot.vue"
-// import TreatmentThumb from "~/components/Test.vue"
+import Thumb from "~/components/Thumb.vue"
 // import GoogleReview from "~/components/GoogleReview/GoogleReview.vue"
 // let GoogleReview2 = "https://widget.trustmary.com/5qR6J__JS"
 
@@ -386,6 +424,7 @@ export default {
     OpenInNewIcon,
     Social,
     TreatmentThumb,
+    Thumb,
     GiftVoucher,
     TimeLineDot,
     // GoogleReview,

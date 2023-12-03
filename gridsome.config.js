@@ -62,6 +62,18 @@ module.exports = {
       },
     },
     {
+      use: "@gridsome/source-filesystem",
+      options: {
+        baseDir: './content/blogs/',
+        path: "*.md",
+        typeName: "Blogs", // for the sake of naming GraphQL - template missing
+        remark: {
+          externalLinksTarget: '_blank',
+          externalLinksRel: ['noopener', 'noreferrer'],
+        },
+      },
+    },
+    {
       use: "gridsome-plugin-windicss",
       options: {
         purgeConfig: {
